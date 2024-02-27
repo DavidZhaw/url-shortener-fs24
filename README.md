@@ -15,6 +15,10 @@ The URL Shortener is a web application that allows users to shorten long URLs in
 3. Click the "Shorten" button to generate the shortened URL.
 4. Copy the shortened URL and share it with others.
 
+## Sequence Diagram
+
+![Sequence Diagram](doc\figures\sequence-diagram.drawio.svg)
+
 ## Contributing
 
 Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
@@ -22,3 +26,5 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+
