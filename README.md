@@ -17,7 +17,7 @@ The URL Shortener is a web application that allows users to shorten long URLs in
 
 ## Sequence Diagram
 
-![Sequence Diagram](doc\figures\sequence-diagram.drawio.svg)
+![Sequence Diagram](doc/figures/sequence-diagram.drawio.svg)
 
 ## Contributing
 
