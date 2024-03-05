@@ -19,9 +19,14 @@ public class UrlController {
 
     @PostMapping("/shorten")
     public ResponseEntity<String> shortenUrl(@RequestBody ShortUrlDTO shortUrlDTO) {
-        String shortUrl = UUID.randomUUID().toString().substring(0,8);
-        urlMap.put(shortUrl, new ShortUrl(shortUrl, shortUrlDTO.getLongUrl()));
-        return ResponseEntity.ok(shortUrl);
+        String shortUrl = UUID.randomUUID().toString().substring(0, 8);
+        String longUrl = shortUrlDTO.getLongUrl();
+        if (longUrl.startsWith("http://")) {
+            urlMap.put(shortUrl, new ShortUrl(shortUrl, shortUrlDTO.getLongUrl()));
+            return ResponseEntity.ok(shortUrl);
+        } else {
+            return ResponseEntity.badRequest().body("URL must start with http://");
+        }
     }
 
     @GetMapping("/urls")
