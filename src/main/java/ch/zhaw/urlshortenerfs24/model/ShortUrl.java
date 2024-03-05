@@ -8,4 +8,5 @@ import lombok.Getter;
 public class ShortUrl {
     private String shortUrl;
     private String longUrl;
+    private Long creationDate;
 }
