@@ -8,4 +8,5 @@ import lombok.NoArgsConstructor;
 public class ShortUrlDTO {
     private String longUrl;
     private String user;
+    private String description;
 }

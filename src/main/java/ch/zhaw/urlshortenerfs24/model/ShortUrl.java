@@ -14,4 +14,5 @@ public class ShortUrl {
     private String longUrl;
     private Long creationDate;
     private String user;
+    private String description;
 }
